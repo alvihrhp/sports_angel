@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+#col-left {
+    padding: 5pc !important;
+    background-color: #1f2023;
+    box-shadow: 0 0 10px black;
+}
+
+#col-header-left {
+    padding-top: 5px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.modal-body {
+    padding: 10px 80px;
+}
+
+.center-text-and-logo {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.v-team-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.h-team-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.border-schedule {
+    border-bottom: 2px solid grey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.trophy {
+    color: #FFD700;
+    font-size: 48px;
+    float: right;
+}
+
+#col-left-body {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#col-left-body h2 {
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.league-name {
+    cursor: pointer;
+}
+
+.league-name::first-letter {
+    text-transform: uppercase;
+}
+
+.basketball {
+    font-size: 30px;
+    color: #FA8320;
+    padding-bottom: 10px;
+    padding-top: 16px;
+    float: right;
+}
+
+.border-league {
+    border-bottom: 1px solid #696969;
+}
+
+.modal-title::first-letter {
+    text-transform: uppercase;
+}
+
+#pills-tab {
+    margin-bottom: 0 !important;
+}
+
+#pills-home-tab {
+    padding: 8px 30px;
+}
+
+#pills-profile-tab {
+    padding: 8px 30px;
+}
+
+#pills-contact-tab {
+    padding: 8px 30px;
+}
+
+#col-header-right h3{
+    color: #FFD700;
+    margin-bottom: 0 !important;
+}
+
+#col-header-right h5{
+    color: #fff;
+    margin-bottom: 0 !important;
+    letter-spacing: 2px;
+}
+
+#col-right {
+    padding: 0 !important;
+}
+
+.carousel-item {
+    background-color: black;
+    position: relative;
+}
+
+#image-slide {
+    min-height: 743px;
+    opacity: 0.5;
+}
+
+#first-caption {
+    position: absolute;
+    bottom: 27%;
+}
+
+#second-caption {
+    position: absolute;
+    bottom: 35.5%;
+}
+
+#third-caption {
+    position: absolute;
+    bottom: 31%;
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 10px;
+}

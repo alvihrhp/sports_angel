@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
+<<<<<<< HEAD
+    <title>Sports Angel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+=======
     <!-- Required meta tags -->
     <meta charset="utf-8">
 <<<<<<< HEAD
+>>>>>>> c50d2c7aa5e656e6f3b6ae6ef625b3a4c554b83c
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<<<<<<< HEAD
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <style>
         body,html{
             margin: 0;
@@ -50,9 +62,98 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <meta name="google-signin-client_id" content="28377485352-q817kugueua3da6emqrous1nglu0eoos.apps.googleusercontent.com">
-    
-    <title>Football</title>
   </head>
+  <body>
+    <!--Calender&&Schedule&&Standing Popup-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-schedule" role="tab" aria-controls="pills-home" aria-selected="true">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-standings" role="tab" aria-controls="pills-profile" aria-selected="false">Standings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Top Scorer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                  <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-schedule" role="tabpanel" aria-labelledby="pills-home-tab">
+                            
+                        </div>
+                        <div class="tab-pane fade" id="pills-standings" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Calender&&Schedule&&Standing Popup-->
+    <!--Body-->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="col-left" class="col-sm-12 col-md-4 col-lg-4">
+                <div class="header">
+                    <div class="row">
+                        <div id="col-header-left" class="col-sm-3 col-md-3 col-lg-3">
+                            <i class="trophy fas fa-trophy"></i>
+                        </div>
+                        <div id="col-header-right" class="col-sm-9 col-md-9 col-lg-9">
+                            <h3>BASKETBALL LEAGUE</h3>
+                            <h5>All In One</h5>
+                        </div>
+                    </div>    
+                </div>
+                <div class="body">
+                    <div class="row">
+                        <div id="col-left-body" class="col-sm-12 col-md-12 col-lg-12">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="col-right" class="col-sm-12 col-md-8 col-lg-8">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="image-overlay"></div>
+                            <img id="image-slide" class="d-block w-100" src="assets/img/slide-1.jpg" alt="First slide">
+                            <div id="first-caption" class="carousel-caption d-none d-md-block">
+                                <h5>THE BEST AND<br>FASTEST WAY TO<br>LEARN A SPORT IS TO<br>WATCH AND IMITATE<br>A CHAMPION</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img id="image-slide" class="d-block w-100" src="assets/img/slide-2.jpg" alt="Second slide">
+                            <div id="second-caption" class="carousel-caption d-none d-md-block">
+                                <h5>JUST PLAY<br>HAVE FUN<br>ENJOY THE GAME</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img id="image-slide" class="d-block w-100" src="assets/img/slide-3.jpg" alt="Third slide">
+                            <div id="third-caption" class="carousel-caption d-none d-md-block">
+                                <h5>T-TOGETHER<br>E-EVERYONE<br>A-ACHIEVES<br>M-MORE</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
   <body>
 =======
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -84,7 +185,6 @@
 <<<<<<< HEAD
                     <h1 class="text-center" style="color: cornsilk;">Sign In with</h1>
 =======
-                    <h1 class="text-center" style="color: cornsilk;">Sign Up with</h1>
 >>>>>>> be1242979ac3cca2926d90d1c578c8a6df70819c
                     <div class="g-signin2" data-onsuccess="onSignIn" style="margin-left: 15vh; margin-bottom: 15px;"></div>
                 </div>
@@ -219,10 +319,176 @@
 
                         </div>
                     </div>
+>>>>>>> c50d2c7aa5e656e6f3b6ae6ef625b3a4c554b83c
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+    <!--Body-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        axios({
+            method: 'get',
+            url: 'http://localhost:3000/nba',
+            responseType: 'json'
+        })
+        .then(response => {
+            const leagues = response.data;
+            $('#col-left-body').empty()
+            leagues.data.forEach(league => {
+                $('#col-left-body').append(`
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6"> 
+                        <h2 id="league" class="league-name" data-toggle="modal" data-target="#myModal">${league}</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6"> 
+                        <i class="basketball fas fa-basketball-ball"></i>
+                    </div>
+                </div>
+                <div class="border-league"></div>
+                `).addClass('animated').addClass('fadeInUp')
+            });
+        })
+        .catch(error => {
+            alert(error);
+        })
+
+        $(document).on('click', '#league', function() {
+            const title = $(this).text()
+            $('.modal-title').html(`${title} League`)
+            axios({
+                method: 'get',
+                url: `http://localhost:3000/nba/gameSchedule/${title}`
+            })
+            .then(response => {
+                $('#pills-schedule').empty()
+                response.data.leagues.forEach(league => {
+                    let date = new Date(league.startTimeUTC).toLocaleString()
+                    $('#pills-schedule').append(`
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 center-text-and-logo">
+                            <h5 class="v-team-name">${league.vTeam.fullName}</h5>
+                            <img class="v-team-logo" src="${league.vTeam.logo}"/>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2">
+                            <h1 style="text-align: center;">VS</h1>
+                        </div>
+                        <div class="col-sm-5 col-md-5 col-lg-5 center-text-and-logo">
+                            <h5 class="h-team-name">${league.hTeam.fullName}</h5>
+                            <img class="h-team-logo" src="${league.hTeam.logo}"/>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h5 style="text-align: center;">${date}</h5>
+                        </div>    
+                    </div>
+                    <div class="border-schedule"></div>
+                    `)
+                })
+
+            })
+            .catch(error => {
+                alert(error);
+            })
+            //Tujuan untuk dapetin standings
+            axios({
+                method: 'get',
+                url: `http://localhost:3000/nba/standings/${title}`
+            })
+            .then(response => {
+                const standings = response.data;
+                console.log(standings)
+                $('#pills-standings').empty()
+                $('#pills-standings').append(`
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-west" role="tab" aria-controls="nav-home" aria-selected="true">West Conference</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-east" role="tab" aria-controls="nav-profile" aria-selected="false">East Confrence</a>
+                    </div>
+                </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-west" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+                    <div class="tab-pane fade" id="nav-east" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+                </div>
+                `)
+                $('#nav-west').append(`
+                    <div class="container-fluid">
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">Team ID</th>
+                                    <th scope="col">Win</th>
+                                    <th scope="col">Lost</th>
+                                    <th scope="col">Streak</th>
+                                </tr>
+                            </thead>
+                            <tbody class="west-table-standings">
+
+                            </tbody>
+                        </table>
+                    </div>
+                `)
+                $('.west-table-standings').empty()
+                standings.data.ordered_west.forEach(team => {
+                    $('.west-table-standings').append(`
+                        <tr>
+                            <td>${team.conference.rank}</td>
+                            <td>${team.teamId}</td>
+                            <td>${team.win}</td>
+                            <td>${team.loss}</td>
+                            <td>${team.streak}</td>    
+                        </tr>
+                    `)
+                })
+                $('#nav-east').append(`
+                    <div class="container-fluid">
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">Team ID</th>
+                                    <th scope="col">Win</th>
+                                    <th scope="col">Lost</th>
+                                    <th scope="col">Streak</th>
+                                </tr>
+                            </thead>
+                            <tbody class="east-table-standings">
+
+                            </tbody>
+                        </table>
+                    </div>
+                `)
+                $('.east-table-standings').empty()
+                standings.data.ordered_east.forEach(team => {
+                    $('.east-table-standings').append(`
+                        <tr>
+                            <td>${team.conference.rank}</td>
+                            <td>${team.teamId}</td>
+                            <td>${team.win}</td>
+                            <td>${team.loss}</td>
+                            <td>${team.streak}</td>    
+                        </tr>
+                    `)
+                })
+            })
+            .catch(error => {
+                console.log(error);
+            })
+        })
+    })
+    </script>
+  </body>
+</html>
+=======
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -260,3 +526,4 @@
 <!--  28377485352-q817kugueua3da6emqrous1nglu0eoos.apps.googleusercontent.com  -->
 <!--  Fh7k24a-XL3aobYogZmPZcyF  -->
 >>>>>>> be1242979ac3cca2926d90d1c578c8a6df70819c
+>>>>>>> c50d2c7aa5e656e6f3b6ae6ef625b3a4c554b83c
