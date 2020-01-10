@@ -14,6 +14,7 @@ function onSignIn(googleUser) {
 			id_token
 		}
 	}).done((response) => {
+		console.log(response);
 		$('#tombolLogin').fadeOut();
 		$('#home').show();
 		$('#category').show();
