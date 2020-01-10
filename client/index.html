@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jumbotron bg-dark">
+            <div class="form-group">
+                <input class="form-control" type="text" id="news-input">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" id="search-news">search</button>
+            </div>
+        </div>
+        <div class="container" id="news-container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="./script-sam.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+    // home
+    $.ajax({
+        type: "get",
+        url: "http://localhost:3000/news",
+        success: function (response) {
+            const results = response.response.results;
+            if (results.length !== 0) {
+                const cols = results.map(item => `<div class="col-12 col-md-6 col-lg-3">
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">${item.webTitle}</h5>
+        <a href="${item.webUrl}" class="btn btn-primary">Read More</a>
+    </div>
+</div>
+</div>`);
+                $("#news-container div").html(`${cols.join("\n")}`)
+            }
+        }
+    });
+
+    // search
+    $("#search-news").on("click", function (e) {
+        const value = $("#news-input").val();
+        $.ajax({
+            type: "get",
+            url: `http://localhost:3000/news/${value}`,
+            success: function (response) {
+                const results = response.response.results;
+                if (results.length !== 0) {
+                    const cols = results.map(item => `<div class="col-12 col-md-6 col-lg-3">
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">${item.webTitle}</h5>
+        <a href="${item.webUrl}" target="_blank" class="btn btn-primary">Read More</a>
+    </div>
+</div>
+</div>`);
+                    $("#news-container div").html(`${cols.join("\n")}`)
+                }
+            }
+        });
+    })
+});
+    </script>
+</body>
+
+</html>
