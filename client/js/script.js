@@ -4,7 +4,6 @@ $(document).ready(function(){
 
     // FUNCTION
     function showAllLeagues(){
-        console.log('Masuk gan')
         $.ajax({
             url: 'http://localhost:3000/football',
             type: 'get',

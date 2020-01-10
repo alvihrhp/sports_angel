@@ -12,9 +12,12 @@ module.exports = (req, res, next) => {
 			audience : '28377485352-q817kugueua3da6emqrous1nglu0eoos.apps.googleusercontent.com'
 		})
 		.then((ticket) => {
+			console.log(ticket,'tikettt')
 			const payload = ticket.getPayload();
 			req.dataUser = payload;
 			next();
 		})
-		.catch(next);
+		.catch(err=>{
+			console.log(err)
+		});
 };
