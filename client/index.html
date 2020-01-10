@@ -45,10 +45,54 @@
             font-weight: 800;
         }
     </style>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <meta name="google-signin-client_id" content="28377485352-q817kugueua3da6emqrous1nglu0eoos.apps.googleusercontent.com">
     
     <title>Football</title>
   </head>
   <body>
+
+    <div id="home">
+        <ul class="nav justify-content-end nav-danger bg-danger">
+            <li class="nav-item">
+              <a class="nav-link" onclick="signOut()" href="#">Sign Out</a>
+            </li>
+          </ul>
+    </div>
+    <div class="section" id="login">
+        <div class="container" id="tombolLogin">
+            <div class="row justify-content-center" style="padding-top: 20%">
+                <div class="col-4 pt-2" style="background-color: black; border-radius: 10px;">
+                    <h1 class="text-center" style="color: cornsilk;">Sign Up with</h1>
+                    <div class="g-signin2" data-onsuccess="onSignIn" style="margin-left: 15vh; margin-bottom: 15px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="category">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6 justify-content-center">
+                        <div class="card" style="width: 18rem; margin: 5vh 5vh 5vh 15.5vh;" >
+                            <img src="http://content.sportslogos.net/news/2017/07/New-NBA-Logo-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 justify-content-center">
+                        <div class="card" style="width: 18rem; margin: 5vh 5vh 5vh 15.5vh;">
+                            <img src="https://i.pinimg.com/originals/79/24/ec/7924eccaf6779819242591fab54021e5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+
     <div class="container-fluid">
         <div class="row" id="slides"> 
             <div class="col col-md-9" id="left-side">
@@ -162,6 +206,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src='./js/script.js'></script>
+    <script src="script.js"></script>
     <script>
         $('.carousel').carousel();
     </script>

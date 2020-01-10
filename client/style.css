@@ -1,0 +1,30 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url('https://wallpaperaccess.com/full/1112636.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes slide {
+	0% {
+		background-image: url('https://wallpaperaccess.com/full/1112636.jpg');
+	}
+	80% {
+		background-image: url('https://wallpapercave.com/wp/tekM38P.jpg');
+	}
+}
