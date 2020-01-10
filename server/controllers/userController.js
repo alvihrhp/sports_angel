@@ -9,10 +9,8 @@ class UserController {
 		User.findOne({ email })
 			.then((result) => {
 				if (result) {
-					console.log('ok1');
 					return result;
 				} else {
-					console.log('ok2');
 					return User.create({
 						name,
 						email,
@@ -21,6 +19,7 @@ class UserController {
 				}
 			})
 			.then((result) => {
+				console.log('masukkkkk')
 				const newToken = jwt.generateToken(result);
 				res.status(200).json({
 					message : 'login success',

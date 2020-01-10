@@ -1,11 +1,14 @@
 const axios = require('axios')
 
 class FootballController{
-    static getAllLeagues(req,res,next){
-        axios.get('https://api-football-v1.p.rapidapi.com/v2/leagues', {
-            headers: {"X-RapidAPI-Host": process.env.RAPID_HOST, "X-RapidAPI-Key": process.env.RAPID_KEY}
+    static getAllLeagues(req,res,next) {
+            axios.get('https://api-football-v1.p.rapidapi.com/v2/leagues', {
+                headers: {"X-RapidAPI-Host": process.env.RAPID_HOST, 
+                "X-RapidAPI-Key": process.env.RAPID_KEY
+            }
         })
             .then(results => {
+                console.log('test')
                 let data = results.data.api.leagues
                 let finalData = []
                 // Filteringnya berdasarkan tahun, tipe league, dan logo tidak null
